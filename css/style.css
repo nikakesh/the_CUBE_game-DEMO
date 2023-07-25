@@ -1,0 +1,41 @@
+body{
+  background: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 0;
+  font-family:'Handlee', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+#main-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* *I copied this code from stackoverflow*
+  *all it does its that user can't select or copy anything* */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#main-div button{
+  text-align: center;
+  height: 60px;
+  width: 280px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family:'Handlee', cursive;
+}
+
+#bg{
+  position: relative;
+}

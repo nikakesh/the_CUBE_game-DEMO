@@ -1,0 +1,106 @@
+body {
+    font-family: 'Handlee', cursive;
+    font-weight: bolder;
+}
+.mainDiv{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.div1,
+#div2,
+.div3,
+#div4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+    width: 60px;
+    border-radius: 10px;
+    height: 80px;
+}
+#startBt{
+    font-family: 'Handlee', cursive;
+    width: 400px; 
+    border: solid black 2px;
+    font-weight: bolder;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.div1:hover,
+#div2:hover,
+#div4:hover,
+#startBt:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.div1:active,
+#div2:active,
+.div3:active,
+#startBt:active{
+    cursor: pointer; 
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#cube{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+#cube:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#cube2{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+}
+.scoreDiv,
+.mainDiv2{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#scores{
+    text-align: center;
+    margin-top: -330px;
+    margin-left: 175px;
+    background-color: rgb(234, 234, 234);
+    position: absolute;
+    width: 1000px;
+    height: 550px;
+    border: black solid 3px;
+    justify-content: space-around;
+}
+
+#scores p{
+    position: relative;
+}
+
+#scores2{
+    background-color: transparent;
+    width: 900px;
+    height: 480px;
+    overflow: scroll;
+    overflow-y: scroll;
+    transform: rotate(180deg);
+    margin-left: 30px;
+}
+
+#scores2 p{
+    display:block;
+    transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+}
